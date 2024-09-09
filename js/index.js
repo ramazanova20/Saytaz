@@ -6,41 +6,33 @@ function toggleSidebar() {
 }
 
 const myRange = document.getElementById("myRange");
-const demo = document.getElementById("demo");
-demo.innerHTML = myRange.value;
-
-myRange.oninput = function () {
-    demo.innerHTML = this.value;
-    updateNtc();
-}
-
 const myRange1 = document.getElementById("myRange1");
-const demo1 = document.getElementById("demo1");
-
-demo1.innerHTML = myRange1.value * 100;
-
-myRange1.oninput = function () {
-    const calculatedValue = this.value * 100;
-    demo1.innerHTML = calculatedValue;
-    updateNtc();
-}
-
 const ntc = document.getElementById("ntc");
 const newNtc = document.getElementById("newNtc");
 
-
-function updateNtc() {
-    ntc.innerHTML = ""
-    newNtc.innerHTML = ""
-
-    const value1 = parseFloat(demo.innerHTML);
-    const value2 = parseFloat(demo1.innerHTML);
-    let manat = (value1 * value2).toFixed(2);
-    ntc.innerHTML = `sehife: ${demo.innerHTML}, manat: ${manat}`
-    newNtc.innerHTML = `${manat}`
+myRange.oninput = function () {
+    updateNtc();
 }
 
+myRange1.oninput = function () {
+    updateNtc();
+}
+
+function updateNtc() {
+    ntc.innerHTML = "";
+    newNtc.innerHTML = "";
+
+    const value1 = parseFloat(myRange.value);
+    const value2 = parseFloat(myRange1.value) * 100;
+    let manat = (value1 * value2).toFixed(2);
+
+    ntc.innerHTML = `${value1} səhifə / ₼ ${manat}`;
+    newNtc.innerHTML = `${manat}`;
+}
+
+// Initialize the values
 updateNtc();
+
 
 const mySwitch = document.getElementById("mySwitch");
 const mySwitch1 = document.getElementById("mySwitch1");
@@ -73,8 +65,8 @@ function hesapla() {
         }
     });
     
-    ntc1.innerHTML = total;
-    newNtc1.innerHTML = total;
+    ntc1.innerHTML = `₼ ${total}`;
+    newNtc1.innerHTML = `₼ ${total}`;
 }
 
 // Bind function to onchange event for each switch
@@ -110,8 +102,8 @@ function cem() {
             total += parseFloat(checkler.value) || 0;
         }
     });
-    ntc2.innerHTML = total;
-    newNtc2.innerHTML = total;
+    ntc2.innerHTML = `₼ ${total}`;
+    newNtc2.innerHTML = `₼ ${total}`;
 }
 
 // Bind the `cem` function to the `onchange` event of each checkbox
@@ -149,8 +141,8 @@ function tap() {
         }
     });
 
-    ntc3.innerHTML = total;
-    newNtc3.innerHTML = total;
+    ntc3.innerHTML = `₼ ${total}`;
+    newNtc3.innerHTML = `₼ ${total}`;
 
 }
 
@@ -161,7 +153,8 @@ const switchElements1 = [
 
 switchElements1.forEach(switchEl1 => {
     switchEl1.onchange = tap;
-});
+}
+);
 
 tap();
 
@@ -169,14 +162,50 @@ const myLastOneRange = document.getElementById("myLastOneRange");
 const ntc4 = document.getElementById("ntc4");
 const newNtc4 = document.getElementById("newNtc4");
 
-ntc4.innerHTML = myLastOneRange.value * 100;
+// ntc4.innerHTML = myLastOneRange.value * 0;
+
 
 myLastOneRange.oninput = function () {
+    ntc4.innerHTML = "";
+    newNtc4.innerHTML = "";
+
     const calculatedValue = this.value * 100;
-    ntc4.innerHTML = calculatedValue;
-    newNtc4.innerHTML = calculatedValue;
+    ntc4.innerHTML = `₼ ${calculatedValue}`;
+    newNtc4.innerHTML = `₼ ${calculatedValue}`;
     
 }
+
+
+///////////////////////////
+// const myLastOneRange = document.getElementById("myLastOneRange");
+// const ntc4 = document.getElementById("ntc4");
+// const newNtc4 = document.getElementById("newNtc4");
+
+// // Set the initial output to 0
+// ntc4.innerHTML = "0";
+// newNtc4.innerHTML = "0";
+
+// myLastOneRange.oninput = function () {
+//     const calculatedValue = this.value * 100;
+//     ntc4.innerHTML = calculatedValue;
+//     newNtc4.innerHTML = calculatedValue;
+
+//     updateTotal(); // Ensure the overall total is updated
+// }
+
+// // Ensure the total value is updated
+// function updateTotal() {
+//     let total = 0;
+//     totalElements.forEach(element => {
+//         total += parseFloat(element.innerHTML) || 0;
+//     });
+
+//     ntc5.innerHTML = total;
+// }
+
+// // Initialize the total value
+// updateTotal();
+/////////////////////////////////
 
 // const totalNtcElements = [
 //     newNtc, newNtc1, newNtc2, newNtc3, newNtc4
@@ -199,34 +228,34 @@ myLastOneRange.oninput = function () {
 
 // show();
 ///////////////////////////////////////////////////////////////
-// const ntc5 = document.getElementById("ntc5");
+const ntc5 = document.getElementById("ntc5");
 
-// function show() {
-//     const result = [
-//         newNtc,  newNtc1,  newNtc2,
-//         newNtc3,  newNtc4
-//     ];
+function show() {
+    const result = [
+        newNtc,  newNtc1,  newNtc2,
+        newNtc3,  newNtc4
+    ];
 
-//     let total = 0;
-//     result.forEach(neticeler => {
-//         if (neticeler.checked) {
-//             total += parseFloat(neticeler.value) || 0;
-//         }
-//     });
+    let total = 0;
+    result.forEach(neticeler => {
+        if (neticeler.checked) {
+            total += parseFloat(neticeler.value) || 0;
+        }
+    });
 
-//     ntc5.innerHTML = total;
-// }
+    ntc5.innerHTML = total;
+}
 
-// const sonNeticeler = [
-//     newNtc,  newNtc,  newNtc2,
-//     newNtc3,  newNtc4
-// ];
+const sonNeticeler = [
+    newNtc,  newNtc,  newNtc2,
+    newNtc3,  newNtc4
+];
 
-// sonNeticeler.forEach(neticeler => {
-//     neticeler.onchange = show;
-// });
+sonNeticeler.forEach(neticeler => {
+    neticeler.onchange = show;
+});
 
-// show();
+show();
 ////////////////////////////////////////////////////////////////
 // const ntc5 = document.getElementById("ntc5");
 
