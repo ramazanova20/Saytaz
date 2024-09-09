@@ -66,20 +66,24 @@
                         <li><a class="dropdown-item" href="#">E-ticaret</a></li>
                     </ul>
                 </li>
-                <li class="arc nav-item dropdown">
+                <div class="arc nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">manat</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">manat</a></li>
-                        <li><a class="dropdown-item" href="#">dollar</a></li>
-                    </ul>
-                </li>
+                        aria-expanded="false">₼</a>
+                    <div class="dropdown-menu">
+                        <div><a class="dropdown-item" href="#">₼</a></div>
+                        <div><a class="dropdown-item" href="#">$</a></div>
+                    </div>
+                </div>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">az</a>
+                        aria-expanded="false"><img src="img/az.png" alt="Azerbaycan bayragi"></a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">az</a></li>
-                        <li><a class="dropdown-item" href="#">ing</a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <img src="img/az.png" alt="Azerbaycan bayragi">
+                            </a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <img src="img/usa.png" alt="USA bayragi">
+                            </a></li>
                     </ul>
                 </li>
                 <button type="button" class="btn btn-outline-light custom-color-button">Qiymet Teklifi Al</button>
@@ -93,16 +97,28 @@
 
                 <div class="logoDiv">
                     <a id="logo" href="#">
-                        <img src="img/saytaz.svg" alt="saytaz">
+                        <img class="lOOGO" src="img/saytaz.svg" alt="saytaz">
                     </a>
                 </div>
-                <li class="arc nav-item dropdown">
+                <div class="arc nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">manat</a>
-                </li>
+                        aria-expanded="false">₼</a>
+                    <div class="dropdown-menu">
+                        <div><a class="dropdown-item" href="#">₼</a></div>
+                        <div><a class="dropdown-item" href="#">$</a></div>
+                    </div>
+                </div>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">az</a>
+                        aria-expanded="false"><img src="img/az.png" alt="Azerbaycan bayragi"></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">
+                                <img src="img/az.png" alt="Azerbaycan bayragi">
+                            </a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <img class="usa" src="img/usa.png" alt="USA bayragi">
+                            </a></li>
+                    </ul>
                 </li>
                 <li><i onclick="toggleSidebar()" class="fa-solid fa-bars" id="hamIcon"></i></li>
 
@@ -155,20 +171,24 @@
                             <li><a class="dropdown-item" href="#">E-ticaret</a></li>
                         </ul>
                     </li>
-                    <li class="arc nav-item dropdown">
+                    <div class="arc nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">manat</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">manat</a></li>
-                            <li><a class="dropdown-item" href="#">dollar</a></li>
-                        </ul>
-                    </li>
+                            aria-expanded="false">₼</a>
+                        <div class="dropdown-menu">
+                            <div><a class="dropdown-item" href="#">₼</a></div>
+                            <div><a class="dropdown-item" href="#">$</a></div>
+                        </div>
+                    </div>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">az</a>
+                            aria-expanded="false"><img src="img/az.png" alt="Azerbaycan bayragi"></a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">az</a></li>
-                            <li><a class="dropdown-item" href="#">ing</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="img/az.png" alt="Azerbaycan bayragi">
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="img/usa.png" alt="USA bayragi">
+                                </a></li>
                         </ul>
                     </li>
                     <ul>
@@ -182,49 +202,50 @@
         </div>
     </header>
     <main>
-        
+
         <section class="bigCalculator container bgGray">
             <div class="left bgWhite">
                 <div class="mainLeft">
                     <h1 class="txtBlack">Qiymət Təklifi Al</h1>
                     <div class="static">
-                    <h6 class="txtBlack">Statik səhifələr</h6>
-                    <div class="bgGray mainStatic">
-                        <div class="sehife">
-                        <p>Neçə statik səhifə olacaq?</p>
-                        <div class="sliderTxt">
-                            <span>1</span>
-                            <input type="range" min="1" max="20" value="10" class="slider" id="myRange">
-                            <span>20</span>
-                        </div>
-                        </div>
-                        <div class="dizayn">
-                        <p>Dizayn mürəkkəblik :</p>
-                        <div class="dizaynDetails">
-                            <div class="levels">
-                                <span>Sadə</span>
-                                <span>Orta</span>
-                                <span>Xüsusi</span>
+                        <h5 class="txtBlack">Statik səhifələr</h5>
+                        <div class="bgGray mainStatic">
+                            <div class="sehife">
+                                <p>Neçə statik səhifə olacaq?</p>
+                                <div class="sliderTxt">
+                                    <span>1</span>
+                                    <input type="range" min="1" max="20" value="10" class="slider" id="myRange">
+                                    <span>20</span>
+                                </div>
                             </div>
-                            <input type="range" min="1" max="3" value="1" step="1" class="slider" id="myRange1">
+                            <div class="dizayn">
+                                <p>Dizayn mürəkkəblik :</p>
+                                <div class="dizaynDetails">
+                                    <div class="levels">
+                                        <span>Sadə</span>
+                                        <span>Orta</span>
+                                        <span>Xüsusi</span>
+                                    </div>
+                                    <input type="range" min="1" max="3" value="1" step="1" class="slider" id="myRange1">
+                                </div>
+                            </div>
                         </div>
+                        <div class="xerc">
+                            <p>Xerc: </p>
+                            <b><span id="ntc"><b></b></span></b>
                         </div>
                     </div>
-                    <div class="xerc">
-                        <p>Xerc: </p>
-                        <b><span id="ntc"><b></b></span></b>
-                    </div>
-                    </div>
-                    <h6 class="txtBlack">Veb sayt elaveleri</h6>
+                    <h5 class="txtBlack">Veb sayt elaveleri</h5>
                     <div class="veb mainStatic">
-                    
+
                         <div class="orta">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" role="switch" id="mySwitch" value="200">
                                 <label class="form-check-label" for="mySwitch">Bloq</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySwitch1" value="100">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySwitch1"
+                                    value="100">
                                 <label class="form-check-label" for="mySwitch1">Responsiv</label>
                             </div>
                             <div class="form-check form-switch">
@@ -232,15 +253,18 @@
                                 <label class="form-check-label" for="mySwitch2">Mesajlasma</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySwitch3" value="100">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySwitch3"
+                                    value="100">
                                 <label class="form-check-label" for="mySwitch3">Qalereya</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySwitch4" value="100">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySwitch4"
+                                    value="100">
                                 <label class="form-check-label" for="mySwitch4">Saytda Axtaris</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySwitch5" value="400">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySwitch5"
+                                    value="400">
                                 <label class="form-check-label" for="mySwitch5">Rezervasyon</label>
                             </div>
                             <div class="form-check form-switch">
@@ -250,31 +274,38 @@
                         </div>
                         <div class="orta">
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch" value="400">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch"
+                                    value="400">
                                 <label class="form-check-label" for="mySecSwitch">Uzv girisi/Profiller</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch1" value="400">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch1"
+                                    value="400">
                                 <label class="form-check-label" for="mySecSwitch1">Form</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch2" value="50">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch2"
+                                    value="50">
                                 <label class="form-check-label" for="mySecSwitch2">Canli Sohbet</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch3" value="100">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch3"
+                                    value="100">
                                 <label class="form-check-label" for="mySecSwitch3">Elaqe Formasi</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch4" value="100">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch4"
+                                    value="100">
                                 <label class="form-check-label" for="mySecSwitch4">Xerite Melumati/Geolocation</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch5" value="50">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch5"
+                                    value="50">
                                 <label class="form-check-label" for="mySecSwitch5">Sosial Media Inteqrasiyasi</label>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch6" value="300">
+                                <input class="form-check-input" type="checkbox" role="switch" id="mySecSwitch6"
+                                    value="300">
                                 <label class="form-check-label" for="mySecSwitch6">Admin Panel</label>
                             </div>
                         </div>
@@ -283,126 +314,188 @@
                         <p>Xerc: </p>
                         <b><span id="ntc1"></span></b>
                     </div>
-                    <h6 class="txtBlack">Axtarış motorunun optimallaşdırılması</h6>
+                    <h5 class="txtBlack">Axtarış motorunun optimallaşdırılması</h5>
                     <div class="axtaris bgWhite">
-                    <div class="axtarisMotoru mainStatic">
-                        <div class="leftMotor">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="200" id="check">
-                                <label class="form-check-label" for="check">
-                                  Basliqlar & Meta
-                                </label>
+                        <div class="axtarisMotoru mainStatic">
+                            <div class="leftMotor">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="200" id="check">
+                                    <label class="form-check-label" for="check">
+                                        Basliqlar & Meta
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="300" id="check1">
+                                    <label class="form-check-label" for="check1">
+                                        +20 Qabaqcil Texnika
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="100" id="check2">
+                                    <label class="form-check-label" for="check2">
+                                        SiteMap
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="300" id="check1">
-                                <label class="form-check-label" for="check1">
-                                  +20 Qabaqcil Texnika
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="100" id="check2">
-                                <label class="form-check-label" for="check2">
-                                  SiteMap
-                                </label>
+                            <div class="rightMotor">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="300" id="check3">
+                                    <label class="form-check-label" for="check3">
+                                        Acar soz
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="100" id="check4">
+                                    <label class="form-check-label" for="check4">
+                                        Basliq Teqleri
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                       <div class="rightMotor">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="300" id="check3">
-                            <label class="form-check-label" for="check3">
-                             Acar soz
-                            </label>
+                        <div class="xerc">
+                            <p>Xerc: </p>
+                            <b><span id="ntc2"></span></b>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="100" id="check4">
-                            <label class="form-check-label" for="check4">
-                              Basliq Teqleri
-                            </label>
-                        </div>
-                       </div>
                     </div>
-                    <div class="xerc">
-                        <p>Xerc: </p>
-                        <b><span id="ntc2"></span></b>
-                    </div>
-                    </div>
-                    <h6 class="txtBlack">Elektron ticarət əlavələri</h6>
+                    <h5 class="txtBlack">Elektron ticarət əlavələri</h5>
                     <div class="elektron bgWhite">
-                    <div class="elektronTicaret mainStatic">
-                        <div class="orta">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" value="200" id="myLastSwitch">
-                                <label class="form-check-label" for="myLastSwitch">Ödəniş</label>
+                        <div class="elektronTicaret mainStatic">
+                            <div class="orta">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" value="200"
+                                        id="myLastSwitch">
+                                    <label class="form-check-label" for="myLastSwitch">Ödəniş</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" value="300"
+                                        id="myLastSwitch1">
+                                    <label class="form-check-label" for="myLastSwitch1">Məhsullar</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" value="300"
+                                        id="myLastSwitch2">
+                                    <label class="form-check-label" for="myLastSwitch2">Filtr</label>
+                                </div>
                             </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" value="300" id="myLastSwitch1">
-                                <label class="form-check-label" for="myLastSwitch1">Məhsullar</label>
-                            </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" value="300" id="myLastSwitch2">
-                                <label class="form-check-label" for="myLastSwitch2">Filtr</label>
+                            <div class="orta">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" value="500"
+                                        id="myLastoneSwitch">
+                                    <label class="form-check-label" for="myLastoneSwitch">Səbət</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" value="300"
+                                        id="myLastoneSwitch1">
+                                    <label class="form-check-label" for="myLastoneSwitch1">Bəyəndiklərim</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" value="200"
+                                        id="myLastoneSwitch2">
+                                    <label class="form-check-label" for="myLastoneSwitch2">Məhsul Haqqında</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="orta">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" value="500" id="myLastoneSwitch">
-                                <label class="form-check-label" for="myLastoneSwitch">Səbət</label>
-                            </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" value="300" id="myLastoneSwitch1">
-                                <label class="form-check-label" for="myLastoneSwitch1">Bəyəndiklərim</label>
-                            </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" value="200" id="myLastoneSwitch2">
-                                <label class="form-check-label" for="myLastoneSwitch2">Məhsul Haqqında</label>
-                            </div>
+                        <div class="xerc">
+                            <p>Xerc: </p>
+                            <b><span id="ntc3"></span></b>
                         </div>
-                    </div>
-                    <div class="xerc">
-                        <p>Xerc: </p>
-                        <b><span id="ntc3"></span></b>
-                    </div>
 
                     </div>
                     <div class="logoDizayn">
-                    <h6 class="txtBlack">Logo dizayni</h6>
-                    <div class="dizayn1 mainStatic">
-                        <div class="dizaynDetails"></div>
-                            <div class="levels">
-                                <span>Ehtiyac yoxdur</span>
-                                <span>Sadə</span>
-                                <span>Xüsusi</span>
+                        <h5 class="txtBlack">Logo dizayni</h5>
+                        <div class="dizayn1 mainStatic">
+                            <div class="dizaynDetails">
+                                <div class="levels">
+                                    <span>Ehtiyac yoxdur</span>
+                                    <span>Sadə</span>
+                                    <span>Xüsusi</span>
+                                </div>
+                                <input type="range" min="0" max="2" value="1" step="0" class="slider"
+                                    id="myLastOneRange">
                             </div>
-                            <input type="range" min="0" max="2" value="1" step="0" class="slider" id="myLastOneRange">
-                    </div>
+                        </div>
                     </div>
                     <div class="xerc">
                         <p>Xerc: </p>
                         <b><span id="ntc4"></span></b>
                     </div>
-                    </div>
                 </div>
             </div>
-            
+            </div>
 
-            <div id="conclusion" >
-                <div class="teklif bgWhite">
-                    <h2>Teklifiniz</h2>
+
+            <div id="conclusion">
+                <div class="teklif bgWhite bosluq">
+                    <h2>Təklifiniz</h2>
                     <div class="qeyd">
-                        <p>Statik Sehifeler: <span id="newNtc"></span></p>
-                        <p>Elaveler: <span id="newNtc1"></span></p>
-                        <p>Seo: <span id="newNtc2"></span></p>
-                        <p>E-ticaret: <span id="newNtc3"></span></p>
-                        <p>Logo dizayn: <span id="newNtc4"></span></p>
+                        <div class="xerc">
+                            <p>Statik səhifələr : </p>
+                            <div class="manat">
+                                <p>₼
+                                    <span id="newNtc"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="xerc">
+                            <p>Əlavələr : </p>
+                            <div class="manat">
+                                <p>₼
+                                    <span id="newNtc1"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="xerc">
+                            <p>SEO : </p>
+                            <div class="manat">
+                                <p>₼
+                                    <span id="newNtc2"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="xerc">
+                            <p>E-ticarət : </p>
+                            <div class="manat">
+                                <p>₼
+                                    <span id="newNtc3"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="xerc">
+                            <p>Logo dizaynı : </p>
+                            <div class="manat">
+                                <p>₼
+                                    <span id="newNtc4"></span>
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
-                    <p>Qeyd: <span id=""></span></p>
-                    <div class="deyer bgDarkblue">
-                        <p>Umumi texmini deyer: <span id="ntc5"></span></p>
+                    <div class="qeydTxt">
+                        <p>Qeyd: </p>
+                        <span id="">Minimum sayt qiyməti ₼ 450</span>
                     </div>
-                    
+
+                    <!-- <div class="deyer bgDarkblue">
+                        <p>Umumi texmini deyer:</p>
+                        <div class="manat">
+                            <p>₼
+                            <span id="ntc5"></span></p>
+                        </div>
+                       
+                    </div> -->
+
+                </div>
+                <div class="deyer bgDarkblue">
+                    <p>Umumi texmini deyer:</p>
+                    <div class="manat">
+                        <p>₼
+                            <span id="ntc5"></span>
+                        </p>
+                    </div>
+
                 </div>
                 <div class="sifaris">
-                    <p>Sifaris: <span id=""></span></p>
+                    <p>Saytınızı İndi Sifariş Edin</p>
                 </div>
             </div>
         </section>
@@ -413,15 +506,18 @@
                 <div class="logoDiv">
                     <a id="logo" href="#">
                         <img src="img/saytaz.svg" alt="saytaz">
-                     </a>
+                    </a>
                 </div>
-                <p>Sayt.az - Web saytların hazırlanması, Domain, Hosting satışı, SEO, SMM və texniki xidmətlər təklif edir.</p>
+                <p>Sayt.az - Web saytların hazırlanması, Domain, Hosting satışı, SEO, SMM və texniki xidmətlər təklif
+                    edir.</p>
                 <div class="socialMedia">
                     <p>Bizi izləyin :</p>
                     <div class="mediaIcons">
                         <a href="https://www.facebook.com/wwwsaytaz"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/sayt.az/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=994703300004&text=Salam.%20Xidm%C9%99tl%C9%99rinizl%C9%99%20maraqlan%C4%B1ram."><i class="fa-brands fa-whatsapp"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=994703300004&text=Salam.%20Xidm%C9%99tl%C9%99rinizl%C9%99%20maraqlan%C4%B1ram."><i
+                                class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.linkedin.com/company/saytaz/"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://www.youtube.com/@sayt-az"><i class="fa-brands fa-youtube"></i></a>
                     </div>
@@ -451,22 +547,18 @@
             </div>
         </div>
         <div class="lastOne">
-            <div class="contacts">
-                <div class="contacts1">
-                    <p>© Copyright 2004-2024 © Sayt.az .  Bütün Hüquqlar Qorunur.</p>
+            <div class="footerSon">
+                <div>
+                    <span>+(99470) 330-00-04</span>
+                    <span>support@sayt.az</span>
                 </div>
-                <div class="contacts2">
-                    <div class="contactType1">
-                        <img src="img/phone-call.svg" alt="">
-                        <p>+(99470) 330-00-04</p>
-                    </div>
-                    <div class="contactType2">
-                        <img src="img/email.svg" alt="">
-                        <p>support@sayt.az</p>
-                    </div>
-                </div>
+                <p>
+                    © Copyright 2004-2024 © Sayt.az . Bütün Hüquqlar
+                </p>
             </div>
         </div>
+
+        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

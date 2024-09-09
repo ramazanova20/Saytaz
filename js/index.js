@@ -1,3 +1,5 @@
+const ntc5 = document.getElementById("ntc5");
+
 const sideBar = document.querySelector(".sideBar");
 const hamIcon = document.getElementById("hamIcon");
 function toggleSidebar() {
@@ -28,6 +30,7 @@ function updateNtc() {
 
     ntc.innerHTML = `${value1} səhifə / ₼ ${manat}`;
     newNtc.innerHTML = `${manat}`;
+    allPrice()
 }
 
 // Initialize the values
@@ -57,16 +60,18 @@ function hesapla() {
         mySecSwitch, mySecSwitch1, mySecSwitch2, mySecSwitch3, mySecSwitch4,
         mySecSwitch5, mySecSwitch6
     ];
-    
+
     let total = 0;
     switches.forEach(switchEl => {
         if (switchEl.checked) {
             total += parseFloat(switchEl.value) || 0;
         }
     });
-    
+
     ntc1.innerHTML = `₼ ${total}`;
-    newNtc1.innerHTML = `₼ ${total}`;
+    newNtc1.innerHTML = ` ${total}`;
+    allPrice()
+
 }
 
 // Bind function to onchange event for each switch
@@ -103,7 +108,9 @@ function cem() {
         }
     });
     ntc2.innerHTML = `₼ ${total}`;
-    newNtc2.innerHTML = `₼ ${total}`;
+    newNtc2.innerHTML = ` ${total}`;
+    allPrice()
+
 }
 
 // Bind the `cem` function to the `onchange` event of each checkbox
@@ -142,7 +149,9 @@ function tap() {
     });
 
     ntc3.innerHTML = `₼ ${total}`;
-    newNtc3.innerHTML = `₼ ${total}`;
+    newNtc3.innerHTML = ` ${total}`;
+    allPrice()
+
 
 }
 
@@ -171,114 +180,18 @@ myLastOneRange.oninput = function () {
 
     const calculatedValue = this.value * 100;
     ntc4.innerHTML = `₼ ${calculatedValue}`;
-    newNtc4.innerHTML = `₼ ${calculatedValue}`;
+    newNtc4.innerHTML = ` ${calculatedValue}`;
+
+}
+
+function allPrice() {
+    const deyerler = document.querySelectorAll(".qeyd span")
+    let count = 0
+    deyerler.forEach(item => {
+        count+= +item.innerHTML
+    })
     
+    ntc5.innerHTML = count
+    
+
 }
-
-
-///////////////////////////
-// const myLastOneRange = document.getElementById("myLastOneRange");
-// const ntc4 = document.getElementById("ntc4");
-// const newNtc4 = document.getElementById("newNtc4");
-
-// // Set the initial output to 0
-// ntc4.innerHTML = "0";
-// newNtc4.innerHTML = "0";
-
-// myLastOneRange.oninput = function () {
-//     const calculatedValue = this.value * 100;
-//     ntc4.innerHTML = calculatedValue;
-//     newNtc4.innerHTML = calculatedValue;
-
-//     updateTotal(); // Ensure the overall total is updated
-// }
-
-// // Ensure the total value is updated
-// function updateTotal() {
-//     let total = 0;
-//     totalElements.forEach(element => {
-//         total += parseFloat(element.innerHTML) || 0;
-//     });
-
-//     ntc5.innerHTML = total;
-// }
-
-// // Initialize the total value
-// updateTotal();
-/////////////////////////////////
-
-// const totalNtcElements = [
-//     newNtc, newNtc1, newNtc2, newNtc3, newNtc4
-// ];
-
-// const ntc5 = document.getElementById("ntc5");
-
-// function show() {
-//     let total = 0;
-//     totalNtcElements.forEach(neticeler => {
-//         total += parseFloat(neticeler.innerHTML) || 0;
-//     });
-
-//     ntc5.innerHTML = total;
-// }
-
-// totalNtcElements.forEach(neticeler => {
-//     neticeler.innerHTML = neticeler.innerHTML; // Trigger update if needed
-// });
-
-// show();
-///////////////////////////////////////////////////////////////
-const ntc5 = document.getElementById("ntc5");
-
-function show() {
-    const result = [
-        newNtc,  newNtc1,  newNtc2,
-        newNtc3,  newNtc4
-    ];
-
-    let total = 0;
-    result.forEach(neticeler => {
-        if (neticeler.checked) {
-            total += parseFloat(neticeler.value) || 0;
-        }
-    });
-
-    ntc5.innerHTML = total;
-}
-
-const sonNeticeler = [
-    newNtc,  newNtc,  newNtc2,
-    newNtc3,  newNtc4
-];
-
-sonNeticeler.forEach(neticeler => {
-    neticeler.onchange = show;
-});
-
-show();
-////////////////////////////////////////////////////////////////
-// const ntc5 = document.getElementById("ntc5");
-
-// function show() {
-//     const result = [
-//         newNtc,  newNtc1,  newNtc2,
-//         newNtc3,  newNtc4
-//     ];
-
-//     let total = 0;
-//     result.forEach(neticeler => {
-//         // Parse the innerHTML as a number and add to total
-//         total += parseFloat(neticeler.innerHTML) || 0;
-//     });
-
-//     ntc5.innerHTML = total;
-// }
-
-// // Initialize the total value
-// show();
-
-
-
-
-
-
