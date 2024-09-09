@@ -526,6 +526,14 @@ ul li a .usa {
     flex-direction: row;
     padding-right: 5px;
 }
+.contactType1 img{
+    padding-right: 5px;
+    padding-top: 3px;
+}
+.contactType2 img{
+    padding-right: 5px;
+    padding-top: 3px;
+}
 
 .contactType1 p {
     padding-right: 5px;
